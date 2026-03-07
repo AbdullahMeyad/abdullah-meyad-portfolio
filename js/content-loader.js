@@ -1,18 +1,40 @@
 /* ============================================
-   CONTENT-LOADER.JS — Load edits from localStorage
+   CONTENT-LOADER.JS — Load config from config.json + localStorage overrides
    ============================================ */
 
 (function () {
     'use strict';
 
-    var raw = localStorage.getItem('portfolio_content');
-    if (!raw) return;
+    // Fetch config.json (ships with the site), then merge localStorage on top
+    fetch('config.json')
+        .then(function (res) { return res.json(); })
+        .then(function (fileConfig) {
+            var merged = fileConfig;
 
-    try {
-        var content = JSON.parse(raw);
-    } catch (e) {
-        return;
-    }
+            // Merge localStorage overrides on top if they exist
+            try {
+                var stored = JSON.parse(localStorage.getItem('portfolio_content'));
+                if (stored && typeof stored === 'object') {
+                    for (var key in stored) {
+                        if (stored.hasOwnProperty(key)) {
+                            merged[key] = stored[key];
+                        }
+                    }
+                }
+            } catch (e) { /* no overrides */ }
+
+            applyContent(merged);
+        })
+        .catch(function () {
+            // Fallback: try localStorage only
+            try {
+                var stored = JSON.parse(localStorage.getItem('portfolio_content'));
+                if (stored) applyContent(stored);
+            } catch (e) { /* nothing to load */ }
+        });
+
+    function applyContent(content) {
+        if (!content) return;
 
     // --- Hero ---
     if (content.hero) {
@@ -164,6 +186,8 @@
             if (firstMsg) firstMsg.textContent = content.chatbot.greeting;
         }
     }
+
+    } // end applyContent
 
     // --- Escape utilities ---
     function escHtml(str) {

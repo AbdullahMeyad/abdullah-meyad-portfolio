@@ -187,6 +187,28 @@
     }
 
     // ---- Contact Form ----
+    var _cfWebhookUrl = '';
+
+    // Pre-load contact form webhook from config.json
+    fetch('config.json')
+        .then(function (res) { return res.json(); })
+        .then(function (cfg) {
+            if (cfg && cfg.contactForm && cfg.contactForm.webhookUrl) {
+                _cfWebhookUrl = cfg.contactForm.webhookUrl;
+            }
+        })
+        .catch(function () { /* ignore */ });
+
+    function getContactFormWebhookUrl() {
+        try {
+            var stored = JSON.parse(localStorage.getItem('portfolio_content'));
+            if (stored && stored.contactForm && stored.contactForm.webhookUrl) {
+                return stored.contactForm.webhookUrl;
+            }
+        } catch (e) { /* ignore */ }
+        return _cfWebhookUrl;
+    }
+
     var contactForm = document.getElementById('contactForm');
     if (contactForm) {
         contactForm.addEventListener('submit', function (e) {
@@ -204,15 +226,7 @@
 
             if (!name || !email || !subject || !message) return;
 
-            // Get webhook URL from localStorage
-            var stored = localStorage.getItem('portfolio_content');
-            var webhookUrl = '';
-            if (stored) {
-                try {
-                    var parsed = JSON.parse(stored);
-                    webhookUrl = (parsed.contactForm && parsed.contactForm.webhookUrl) || '';
-                } catch (err) { /* ignore */ }
-            }
+            var webhookUrl = getContactFormWebhookUrl();
 
             if (!webhookUrl) {
                 status.textContent = 'Contact form is not configured yet.';

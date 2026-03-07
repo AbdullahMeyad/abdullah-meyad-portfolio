@@ -5,7 +5,19 @@
 (function () {
     'use strict';
 
-    // Read webhook URL fresh each time (picks up admin changes without page reload)
+    // Read webhook URL: localStorage first, then cached config.json value
+    var _cachedConfigUrl = '';
+
+    // Pre-load config.json webhook URL
+    fetch('config.json')
+        .then(function (res) { return res.json(); })
+        .then(function (cfg) {
+            if (cfg && cfg.chatbot && cfg.chatbot.webhookUrl) {
+                _cachedConfigUrl = cfg.chatbot.webhookUrl;
+            }
+        })
+        .catch(function () { /* ignore */ });
+
     function getWebhookUrl() {
         try {
             var stored = JSON.parse(localStorage.getItem('portfolio_content'));
@@ -13,7 +25,7 @@
                 return stored.chatbot.webhookUrl;
             }
         } catch (e) { /* ignore */ }
-        return '';
+        return _cachedConfigUrl;
     }
 
     // Generate a session ID for conversation memory

@@ -163,10 +163,10 @@
         var blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
         var a = document.createElement('a');
         a.href = URL.createObjectURL(blob);
-        a.download = 'portfolio-config.json';
+        a.download = 'config.json';
         a.click();
         URL.revokeObjectURL(a.href);
-        showToast('Config exported!');
+        showToast('Config exported! Save it to your project folder and push to deploy.');
     });
 
     document.getElementById('importBtn').addEventListener('click', function () {
