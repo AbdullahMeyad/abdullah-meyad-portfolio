@@ -92,7 +92,7 @@
                 card.innerHTML =
                     '<div class="project-card__image">' +
                         imageHtml +
-                        '<div class="project-card__overlay"><span>View Project</span></div>' +
+
                     '</div>' +
                     '<div class="project-card__info">' +
                         '<span class="project-card__category">' + escHtml(p.category || '') + '</span>' +
@@ -153,7 +153,6 @@
         if (certsGrid) {
             certsGrid.innerHTML = '';
             content.certifications.forEach(function (cert) {
-                var linkHtml = cert.link ? '<a href="' + escAttr(cert.link) + '" class="cert-card__link" target="_blank" rel="noopener noreferrer">View Certificate →</a>' : '';
                 var card = document.createElement('div');
                 card.className = 'cert-card reveal visible';
                 card.innerHTML =
@@ -161,7 +160,6 @@
                     '<div class="cert-card__info">' +
                         '<h3 class="cert-card__title">' + escHtml(cert.title || '') + '</h3>' +
                         '<p class="cert-card__desc">' + escHtml(cert.desc || '') + '</p>' +
-                        linkHtml +
                     '</div>';
                 certsGrid.appendChild(card);
             });
