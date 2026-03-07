@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullah Al Meyad — AI Systems & Automation Engineer</title>
+    <meta name="description" content="Portfolio of Abdullah Al Meyad — AI Systems & Automation Engineer specializing in intelligent workflow architecture, LLM-based solutions, and AI-driven automation.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader__inner">
+            <div class="loader__logo">AM<span class="accent">.</span></div>
+            <p class="loader__quote">&ldquo;The journey of a thousand miles begins with a single click.&rdquo;</p>
+            <div class="loader__bar"><div class="loader__progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Cursor follower -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav__inner">
+            <a href="#hero" class="nav__logo">AM<span class="accent">.</span></a>
+            <div class="nav__links">
+                <a href="#projects" class="nav__link">Work</a>
+                <a href="#about" class="nav__link">About</a>
+                <a href="#skills" class="nav__link">Skills</a>
+                <a href="#education" class="nav__link">Education</a>
+                <a href="#contact" class="nav__link nav__link--cta">Get In Touch</a>
+            </div>
+            <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__inner">
+            <a href="#hero" class="mobile-menu__link">Home</a>
+            <a href="#projects" class="mobile-menu__link">Work</a>
+            <a href="#about" class="mobile-menu__link">About</a>
+            <a href="#skills" class="mobile-menu__link">Skills</a>
+            <a href="#education" class="mobile-menu__link">Education</a>
+            <a href="#contact" class="mobile-menu__link">Get In Touch</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero__content">
+            <div class="hero__grid">
+                <div class="hero__text">
+                    <div class="hero__label reveal">AI Systems & Automation</div>
+                    <h1 class="hero__title">
+                        <span class="hero__line reveal">Abdullah</span>
+                        <span class="hero__line reveal">Al Meyad<span class="accent">.</span></span>
+                    </h1>
+                    <p class="hero__tagline reveal">
+                        Intelligent Workflow Architect — building scalable AI-driven systems, 
+                        LLM-based solutions, and seamless automation architectures.
+                    </p>
+                    <div class="hero__actions reveal">
+                        <a href="#projects" class="btn btn--primary">View Projects</a>
+                        <a href="#contact" class="btn btn--ghost">Let's Talk</a>
+                    </div>
+                </div>
+                <div class="hero__portrait reveal">
+                    <div class="hero__portrait-frame">
+                        <img src="images/final.png" alt="Abdullah Al Meyad" loading="eager">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <div class="hero__scroll-line"></div>
+            <span>Scroll to Explore</span>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label reveal">Selected Work</span>
+                <h2 class="section-title reveal">Projects<span class="accent">.</span></h2>
+            </div>
+
+            <div class="projects__grid">
+                <!-- Project 1 -->
+                <article class="project-card reveal">
+                    <div class="project-card__image">
+                        <img src="images/projects/easy-travel.png" alt="Easy Travel" loading="lazy">
+                        <div class="project-card__overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-card__info">
+                        <span class="project-card__category">Desktop Application</span>
+                        <h3 class="project-card__title">Easy Travel</h3>
+                        <p class="project-card__desc">Java Swing academic project for travel management</p>
+                        <div class="project-card__tags">
+                            <span class="project-tag">Java</span>
+                            <span class="project-tag">Swing</span>
+                            <span class="project-tag">OOP</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card reveal">
+                    <div class="project-card__image">
+                        <img src="images/projects/blood-bank.png" alt="Blood Bank System" loading="lazy">
+                        <div class="project-card__overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-card__info">
+                        <span class="project-card__category">Database / Backend</span>
+                        <h3 class="project-card__title">Blood Bank System</h3>
+                        <p class="project-card__desc">MySQL-based academic project for blood bank operations</p>
+                        <div class="project-card__tags">
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">Database Design</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card reveal">
+                    <div class="project-card__image">
+                        <img src="images/projects/cafe-management.png" alt="Cafe Management" loading="lazy">
+                        <div class="project-card__overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-card__info">
+                        <span class="project-card__category">Desktop Application</span>
+                        <h3 class="project-card__title">Cafe Management</h3>
+                        <p class="project-card__desc">C# desktop project for cafe operations</p>
+                        <div class="project-card__tags">
+                            <span class="project-tag">C#</span>
+                            <span class="project-tag">.NET</span>
+                            <span class="project-tag">OOP</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card reveal">
+                    <div class="project-card__image">
+                        <img src="images/projects/radhuni-chatbot.png" alt="Radhuni Chatbot" loading="lazy">
+                        <div class="project-card__overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-card__info">
+                        <span class="project-card__category">AI / Automation</span>
+                        <h3 class="project-card__title">Radhuni Chatbot</h3>
+                        <p class="project-card__desc">AI automation chatbot for restaurant orders</p>
+                        <div class="project-card__tags">
+                            <span class="project-tag">N8n</span>
+                            <span class="project-tag">AI Agents</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card reveal">
+                    <div class="project-card__image">
+                        <img src="images/projects/chakribakri.png" alt="Chakribakri" loading="lazy">
+                        <div class="project-card__overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-card__info">
+                        <span class="project-card__category">Full-Stack Development</span>
+                        <h3 class="project-card__title">Chakribakri</h3>
+                        <p class="project-card__desc">Full-stack job portal for job seekers and employers</p>
+                        <div class="project-card__tags">
+                            <span class="project-tag">Spring Boot</span>
+                            <span class="project-tag">MySQL</span>
+                            <span class="project-tag">JS</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="project-card reveal">
+                    <div class="project-card__image">
+                        <img src="images/projects/diabetes-pred.png" alt="Diabetes Prediction" loading="lazy">
+                        <div class="project-card__overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-card__info">
+                        <span class="project-card__category">Data Science / ML</span>
+                        <h3 class="project-card__title">Diabetes Prediction</h3>
+                        <p class="project-card__desc">Data Science academic project for diabetes prediction using ML</p>
+                        <div class="project-card__tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Pandas</span>
+                            <span class="project-tag">Scikit Learn</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 7 -->
+                <article class="project-card reveal">
+                    <div class="project-card__image">
+                        <img src="images/projects/ecommerce-automation.png" alt="E-Commerce Automation System" loading="lazy">
+                        <div class="project-card__overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-card__info">
+                        <span class="project-card__category">AI / Automation</span>
+                        <h3 class="project-card__title">E-Commerce Automation System</h3>
+                        <p class="project-card__desc">Multi-channel e-commerce automation with order processing, customer support, and notifications across platforms</p>
+                        <div class="project-card__tags">
+                            <span class="project-tag">n8n</span>
+                            <span class="project-tag">Zapier</span>
+                            <span class="project-tag">WooCommerce</span>
+                            <span class="project-tag">Messenger</span>
+                            <span class="project-tag">WhatsApp</span>
+                            <span class="project-tag">Telegram</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 8 -->
+                <article class="project-card reveal">
+                    <div class="project-card__image">
+                        <img src="images/projects/martial-arts-followup.png" alt="Martial Arts Academy Follow-Up System" loading="lazy">
+                        <div class="project-card__overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-card__info">
+                        <span class="project-card__category">AI / Automation</span>
+                        <h3 class="project-card__title">Martial Arts Academy Follow-Up</h3>
+                        <p class="project-card__desc">Automated email follow-up system for martial arts academy using GHL to n8n pipeline with Spark membership integration</p>
+                        <div class="project-card__tags">
+                            <span class="project-tag">Go High Level</span>
+                            <span class="project-tag">n8n</span>
+                            <span class="project-tag">Spark Membership</span>
+                            <span class="project-tag">Email Automation</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 9 -->
+                <article class="project-card reveal">
+                    <div class="project-card__image">
+                        <img src="images/projects/healthcare-chatbot.png" alt="Healthcare Chatbot" loading="lazy">
+                        <div class="project-card__overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-card__info">
+                        <span class="project-card__category">AI / Automation</span>
+                        <h3 class="project-card__title">Healthcare Chatbot</h3>
+                        <p class="project-card__desc">AI-powered healthcare chatbot using GHL and n8n with real-time data fetching from Go High Level CRM</p>
+                        <div class="project-card__tags">
+                            <span class="project-tag">Go High Level</span>
+                            <span class="project-tag">n8n</span>
+                            <span class="project-tag">AI Chatbot</span>
+                            <span class="project-tag">Healthcare</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 10 -->
+                <article class="project-card reveal">
+                    <div class="project-card__image">
+                        <img src="images/projects/crm-openclaw.png" alt="CRM with OpenClaw & Subagents" loading="lazy">
+                        <div class="project-card__overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-card__info">
+                        <span class="project-card__category">AI / CRM</span>
+                        <h3 class="project-card__title">CRM with OpenClaw & Subagents</h3>
+                        <p class="project-card__desc">Custom CRM system built with OpenClaw and AI subagents for intelligent lead management and automated workflows</p>
+                        <div class="project-card__tags">
+                            <span class="project-tag">OpenClaw</span>
+                            <span class="project-tag">AI Agents</span>
+                            <span class="project-tag">CRM</span>
+                            <span class="project-tag">Subagents</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 11 -->
+                <article class="project-card reveal">
+                    <div class="project-card__image">
+                        <img src="images/projects/ghl-client-work.png" alt="GHL Client Automation" loading="lazy">
+                        <div class="project-card__overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-card__info">
+                        <span class="project-card__category">Client Work</span>
+                        <h3 class="project-card__title">GHL Client Automation</h3>
+                        <p class="project-card__desc">Go High Level automation and workflow setup for client business operations, lead funnels, and CRM management</p>
+                        <div class="project-card__tags">
+                            <span class="project-tag">Go High Level</span>
+                            <span class="project-tag">CRM</span>
+                            <span class="project-tag">Automation</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 12 -->
+                <article class="project-card reveal">
+                    <div class="project-card__image">
+                        <img src="images/projects/client-automation.png" alt="Client Workflow Automation" loading="lazy">
+                        <div class="project-card__overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-card__info">
+                        <span class="project-card__category">Client Work</span>
+                        <h3 class="project-card__title">Client Workflow Automation</h3>
+                        <p class="project-card__desc">End-to-end workflow automation and integration system built for client business process optimization</p>
+                        <div class="project-card__tags">
+                            <span class="project-tag">n8n</span>
+                            <span class="project-tag">Automation</span>
+                            <span class="project-tag">API Integration</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 13 -->
+                <article class="project-card reveal">
+                    <div class="project-card__image">
+                        <img src="images/projects/resume-extractor.png" alt="Resume Extractor & ATS Checker" loading="lazy">
+                        <div class="project-card__overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-card__info">
+                        <span class="project-card__category">AI / Automation</span>
+                        <h3 class="project-card__title">Resume Extractor & ATS Checker</h3>
+                        <p class="project-card__desc">AI-powered resume extractor, ATS compatibility checker, and resume builder automated with n8n workflows</p>
+                        <div class="project-card__tags">
+                            <span class="project-tag">n8n</span>
+                            <span class="project-tag">AI</span>
+                            <span class="project-tag">ATS</span>
+                            <span class="project-tag">Resume Builder</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 14 -->
+                <article class="project-card reveal">
+                    <div class="project-card__image">
+                        <img src="images/projects/hr-management.png" alt="HR Management System" loading="lazy">
+                        <div class="project-card__overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-card__info">
+                        <span class="project-card__category">AI / Automation</span>
+                        <h3 class="project-card__title">HR Management System</h3>
+                        <p class="project-card__desc">Automated HR management system built with n8n for employee onboarding, leave management, and attendance tracking</p>
+                        <div class="project-card__tags">
+                            <span class="project-tag">n8n</span>
+                            <span class="project-tag">HR</span>
+                            <span class="project-tag">Automation</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 15 -->
+                <article class="project-card reveal">
+                    <div class="project-card__image">
+                        <img src="images/projects/project-tracker.png" alt="Project Tracker" loading="lazy">
+                        <div class="project-card__overlay">
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                    <div class="project-card__info">
+                        <span class="project-card__category">Full-Stack Development</span>
+                        <h3 class="project-card__title">Project Tracker</h3>
+                        <p class="project-card__desc">Project management and task tracking application built with vibe coding — real-time collaboration and progress monitoring</p>
+                        <div class="project-card__tags">
+                            <span class="project-tag">Vibe Coding</span>
+                            <span class="project-tag">Full-Stack</span>
+                            <span class="project-tag">Project Management</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__left">
+                    <span class="section-label reveal">About</span>
+                    <h2 class="section-title reveal">Building intelligent<br>systems that<br>matter<span class="accent">.</span></h2>
+                </div>
+                <div class="about__right">
+                    <p class="about__text reveal">
+                        AI Automation Engineer with hands-on programming experience in backend development, 
+                        API integrations, and AI-driven workflow automation. Skilled in designing scalable systems, 
+                        implementing LLM-based solutions, and connecting multiple platforms to create seamless, 
+                        data-driven automation architectures.
+                    </p>
+                    <p class="about__text reveal">
+                        Currently at <strong>Octopi Digital LLC</strong>, I design and deploy AI-driven automation systems 
+                        using GHL, n8n, Make, Zapier, Vapi, SimpleTalk, and Retell AI — building CRM workflows, 
+                        API integrations, and AI voice agents to streamline operations and improve client conversion processes.
+                    </p>
+                    <div class="about__details reveal">
+                        <div class="about__detail">
+                            <span class="about__detail-label">Location</span>
+                            <span class="about__detail-value">Dhaka, Bangladesh</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label reveal">Expertise</span>
+                <h2 class="section-title reveal">Skills & Tools<span class="accent">.</span></h2>
+            </div>
+
+            <div class="skills__grid">
+                <div class="skill-group reveal">
+                    <h3 class="skill-group__title">Programming Languages</h3>
+                    <div class="skill-group__tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C / C++</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">Dart</span>
+                    </div>
+                </div>
+
+                <div class="skill-group reveal">
+                    <h3 class="skill-group__title">Backend & Frameworks</h3>
+                    <div class="skill-group__tags">
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">.NET</span>
+                        <span class="skill-tag">Maven</span>
+                        <span class="skill-tag">Gradle</span>
+                        <span class="skill-tag">React</span>
+                    </div>
+                </div>
+
+                <div class="skill-group reveal">
+                    <h3 class="skill-group__title">AI & Machine Learning</h3>
+                    <div class="skill-group__tags">
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Agentic AI</span>
+                        <span class="skill-tag">Data Science</span>
+                        <span class="skill-tag">Data Mining</span>
+                    </div>
+                </div>
+
+                <div class="skill-group reveal">
+                    <h3 class="skill-group__title">Automation & Integration</h3>
+                    <div class="skill-group__tags">
+                        <span class="skill-tag">n8n</span>
+                        <span class="skill-tag">Zapier</span>
+                        <span class="skill-tag">Make</span>
+                        <span class="skill-tag">Go High Level</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Postman</span>
+                    </div>
+                </div>
+
+                <div class="skill-group reveal">
+                    <h3 class="skill-group__title">Databases</h3>
+                    <div class="skill-group__tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">SQL Server</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Experience Section -->
+    <section class="education" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label reveal">Background</span>
+                <h2 class="section-title reveal">Education & Experience<span class="accent">.</span></h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline__item reveal">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__badge">Present</span>
+                        <h3 class="timeline__title">AI Automation Engineer</h3>
+                        <span class="timeline__institution">Octopi Digital LLC</span>
+                        <p class="timeline__detail">January 2026 — Present</p>
+                        <p class="timeline__desc">Design and deploy AI-driven automation systems using GHL, n8n, Make, Zapier, Vapi, SimpleTalk, and Retell AI. Build CRM workflows, API integrations, and AI voice agents to streamline operations, automate lead management, and improve client conversion processes.</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item reveal">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <span class="timeline__badge">Ongoing</span>
+                        <h3 class="timeline__title">Bachelor of Science in Computer Science and Engineering</h3>
+                        <span class="timeline__institution">American International University-Bangladesh (AIUB)</span>
+                        <p class="timeline__detail">11th Semester &nbsp;|&nbsp; CGPA: 3.78</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item reveal">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <h3 class="timeline__title">Higher Secondary Certificate (HSC)</h3>
+                        <span class="timeline__institution">Mirpur Cantonment Public School and College</span>
+                        <p class="timeline__detail">GPA: 5.00 / 5.00</p>
+                    </div>
+                </div>
+
+                <div class="timeline__item reveal">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                        <h3 class="timeline__title">Secondary School Certificate (SSC)</h3>
+                        <span class="timeline__institution">Mirpur Cantonment Public School and College</span>
+                        <p class="timeline__detail">GPA: 4.89 / 5.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label reveal">Recognition</span>
+                <h2 class="section-title reveal">Certifications & Awards<span class="accent">.</span></h2>
+            </div>
+
+            <div class="certs__grid">
+                <div class="cert-card reveal">
+                    <div class="cert-card__icon">📜</div>
+                    <div class="cert-card__info">
+                        <h3 class="cert-card__title">The Ultimate Java Programming Course</h3>
+                        <p class="cert-card__desc">Comprehensive Java programming course from Udemy</p>
+                        <a href="#" class="cert-card__link">View Certificate →</a>
+                    </div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-card__icon">📜</div>
+                    <div class="cert-card__info">
+                        <h3 class="cert-card__title">Python Development Fundamentals</h3>
+                        <p class="cert-card__desc">Comprehensive Python course by MTF Institute</p>
+                        <a href="#" class="cert-card__link">View Certificate →</a>
+                    </div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-card__icon">🏆</div>
+                    <div class="cert-card__info">
+                        <h3 class="cert-card__title">Dean's List Honors</h3>
+                        <p class="cert-card__desc">Faculty of Science and Technology, AIUB</p>
+                    </div>
+                </div>
+
+                <div class="cert-card reveal">
+                    <div class="cert-card__icon">🏅</div>
+                    <div class="cert-card__info">
+                        <h3 class="cert-card__title">MAGNE.Q Fest Achievement</h3>
+                        <p class="cert-card__desc">Mirpur Cantonment Public School & College</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__inner">
+                <span class="section-label reveal">Contact</span>
+                <h2 class="contact__title reveal">
+                    Let's build<br>something great<span class="accent">.</span>
+                </h2>
+                <p class="contact__text reveal">
+                    Have a project in mind or want to collaborate? I'd love to hear from you.
+                </p>
+                <a href="mailto:abdullahmeyad7@gmail.com" class="btn btn--primary btn--lg reveal">
+                    abdullahmeyad7@gmail.com
+                </a>
+                <div class="contact__links reveal">
+                    <a href="https://www.linkedin.com/in/abdullah-al-meyad" target="_blank" rel="noopener noreferrer" class="contact__social">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/AbdullahMeyad" target="_blank" rel="noopener noreferrer" class="contact__social">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="tel:+8801516569243" class="contact__social">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <span>Phone</span>
+                    </a>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form reveal" id="contactForm">
+                    <div class="contact-form__row">
+                        <div class="contact-form__field">
+                            <input type="text" id="cfName" class="contact-form__input" placeholder="Your Name" required>
+                        </div>
+                        <div class="contact-form__field">
+                            <input type="email" id="cfEmail" class="contact-form__input" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="contact-form__field">
+                        <input type="text" id="cfSubject" class="contact-form__input" placeholder="Subject" required>
+                    </div>
+                    <div class="contact-form__field">
+                        <textarea id="cfMessage" class="contact-form__input contact-form__textarea" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--lg contact-form__submit">
+                        <span class="contact-form__btn-text">Send Message</span>
+                        <span class="contact-form__btn-loading" style="display:none;">Sending...</span>
+                    </button>
+                    <p class="contact-form__status" id="cfStatus"></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <span class="footer__brand">Abdullah Al Meyad <span class="accent">©</span> 2026</span>
+                <span class="footer__note">Designed & built with precision.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div class="chatbot" id="chatbot">
+        <div class="chatbot__window" id="chatbotWindow">
+            <div class="chatbot__header">
+                <div class="chatbot__header-info">
+                    <span class="chatbot__status"></span>
+                    <span>AI Assistant</span>
+                </div>
+                <button class="chatbot__close" id="chatbotClose" aria-label="Close chat">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+            </div>
+            <div class="chatbot__messages" id="chatbotMessages">
+                <div class="chatbot__msg chatbot__msg--bot">
+                    <p>Hi! I'm Abdullah's AI assistant. How can I help you today?</p>
+                </div>
+            </div>
+            <form class="chatbot__input" id="chatbotForm">
+                <input type="text" id="chatbotInput" placeholder="Type a message..." autocomplete="off">
+                <button type="submit" aria-label="Send message">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></svg>
+                </button>
+            </form>
+        </div>
+        <button class="chatbot__toggle" id="chatbotToggle" aria-label="Open chat">
+            <svg class="chatbot__icon-chat" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <svg class="chatbot__icon-close" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            <span class="chatbot__pulse"></span>
+        </button>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/content-loader.js"></script>
+    <script>
+    (function(){
+        var loader = document.getElementById('loader');
+        function hideLoader() {
+            loader.classList.add('loader--done');
+            document.body.classList.remove('loading');
+            setTimeout(function(){ loader.style.display = 'none'; }, 800);
+        }
+        window.addEventListener('load', function(){ setTimeout(hideLoader, 1800); });
+        setTimeout(hideLoader, 5000);
+    })();
+    document.body.classList.add('loading');
+    </script>
+</body>
+</html>

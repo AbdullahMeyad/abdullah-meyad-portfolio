@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <!-- Login Screen -->
+    <div class="login" id="loginScreen">
+        <div class="login__card">
+            <div class="login__logo">AM<span>.</span></div>
+            <h1 class="login__title">Admin Dashboard</h1>
+            <p class="login__subtitle">Sign in to manage your portfolio</p>
+            <form class="login__form" id="loginForm">
+                <div class="form-group">
+                    <label for="loginId">Username</label>
+                    <input type="text" id="loginId" placeholder="Enter your ID" autocomplete="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPass">Password</label>
+                    <input type="password" id="loginPass" placeholder="Enter password" autocomplete="current-password" required>
+                </div>
+                <p class="login__error" id="loginError"></p>
+                <button type="submit" class="btn-primary">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Dashboard -->
+    <div class="dashboard" id="dashboard" style="display:none;">
+        <nav class="dash-nav">
+            <div class="dash-nav__left">
+                <span class="dash-nav__logo">AM<span>.</span> Admin</span>
+            </div>
+            <div class="dash-nav__right">
+                <button class="dash-nav__link" id="importBtn" title="Import config">&#8593; Import</button>
+                <button class="dash-nav__link" id="exportBtn" title="Export config">&#8595; Export</button>
+                <a href="index.html" class="dash-nav__link" target="_blank">View Site</a>
+                <button class="dash-nav__logout" id="logoutBtn">Logout</button>
+            </div>
+            <input type="file" id="importFile" accept=".json" style="display:none">
+        </nav>
+
+        <div class="dash-layout">
+            <!-- Sidebar -->
+            <aside class="dash-sidebar">
+                <button class="sidebar-btn active" data-section="hero">Hero Section</button>
+                <button class="sidebar-btn" data-section="about">About</button>
+                <button class="sidebar-btn" data-section="projects">Projects</button>
+                <button class="sidebar-btn" data-section="skills">Skills</button>
+                <button class="sidebar-btn" data-section="education">Education & Experience</button>
+                <button class="sidebar-btn" data-section="certifications">Certifications</button>
+                <button class="sidebar-btn" data-section="contact">Contact</button>
+                <button class="sidebar-btn" data-section="contactform">Contact Form</button>
+                <button class="sidebar-btn" data-section="chatbot">Chatbot Settings</button>
+            </aside>
+
+            <!-- Content Area -->
+            <main class="dash-main">
+                <!-- Hero -->
+                <div class="dash-section active" id="sec-hero">
+                    <h2 class="dash-section__title">Hero Section</h2>
+                    <div class="form-group">
+                        <label for="heroLabel">Label (above name)</label>
+                        <input type="text" id="heroLabel" placeholder="AI Systems & Automation">
+                    </div>
+                    <div class="form-group">
+                        <label for="heroName1">Name Line 1</label>
+                        <input type="text" id="heroName1" placeholder="Abdullah">
+                    </div>
+                    <div class="form-group">
+                        <label for="heroName2">Name Line 2</label>
+                        <input type="text" id="heroName2" placeholder="Al Meyad">
+                    </div>
+                    <div class="form-group">
+                        <label for="heroTagline">Tagline</label>
+                        <textarea id="heroTagline" rows="3" placeholder="Your tagline..."></textarea>
+                    </div>
+                    <button class="btn-primary" onclick="saveSection('hero')">Save Hero</button>
+                </div>
+
+                <!-- About -->
+                <div class="dash-section" id="sec-about">
+                    <h2 class="dash-section__title">About Section</h2>
+                    <div class="form-group">
+                        <label for="aboutTitle">Section Heading</label>
+                        <input type="text" id="aboutTitle" placeholder="Building intelligent systems that matter">
+                    </div>
+                    <div class="form-group">
+                        <label for="aboutBio1">Bio Paragraph 1</label>
+                        <textarea id="aboutBio1" rows="4" placeholder="First paragraph..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="aboutBio2">Bio Paragraph 2</label>
+                        <textarea id="aboutBio2" rows="4" placeholder="Second paragraph..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="aboutLocation">Location</label>
+                        <input type="text" id="aboutLocation" placeholder="Dhaka, Bangladesh">
+                    </div>
+                    <button class="btn-primary" onclick="saveSection('about')">Save About</button>
+                </div>
+
+                <!-- Projects -->
+                <div class="dash-section" id="sec-projects">
+                    <h2 class="dash-section__title">Projects</h2>
+                    <div id="projectsList"></div>
+                    <button class="btn-secondary" onclick="addProject()">+ Add Project</button>
+                    <br><br>
+                    <button class="btn-primary" onclick="saveSection('projects')">Save Projects</button>
+                </div>
+
+                <!-- Skills -->
+                <div class="dash-section" id="sec-skills">
+                    <h2 class="dash-section__title">Skills & Tools</h2>
+                    <div id="skillsList"></div>
+                    <button class="btn-secondary" onclick="addSkillGroup()">+ Add Skill Group</button>
+                    <br><br>
+                    <button class="btn-primary" onclick="saveSection('skills')">Save Skills</button>
+                </div>
+
+                <!-- Education & Experience -->
+                <div class="dash-section" id="sec-education">
+                    <h2 class="dash-section__title">Education & Experience</h2>
+                    <div id="educationList"></div>
+                    <button class="btn-secondary" onclick="addEducation()">+ Add Entry</button>
+                    <br><br>
+                    <button class="btn-primary" onclick="saveSection('education')">Save Education</button>
+                </div>
+
+                <!-- Certifications -->
+                <div class="dash-section" id="sec-certifications">
+                    <h2 class="dash-section__title">Certifications & Awards</h2>
+                    <div id="certsList"></div>
+                    <button class="btn-secondary" onclick="addCert()">+ Add Certification</button>
+                    <br><br>
+                    <button class="btn-primary" onclick="saveSection('certifications')">Save Certifications</button>
+                </div>
+
+                <!-- Contact -->
+                <div class="dash-section" id="sec-contact">
+                    <h2 class="dash-section__title">Contact Info</h2>
+                    <div class="form-group">
+                        <label for="contactEmail">Email</label>
+                        <input type="email" id="contactEmail" placeholder="abdullahmeyad7@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactLinkedin">LinkedIn URL</label>
+                        <input type="url" id="contactLinkedin" placeholder="https://linkedin.com/in/...">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactGithub">GitHub URL</label>
+                        <input type="url" id="contactGithub" placeholder="https://github.com/...">
+                    </div>
+                    <div class="form-group">
+                        <label for="contactPhone">Phone</label>
+                        <input type="tel" id="contactPhone" placeholder="+8801516569243">
+                    </div>
+                    <button class="btn-primary" onclick="saveSection('contact')">Save Contact</button>
+                </div>
+
+                <!-- Contact Form Settings -->
+                <div class="dash-section" id="sec-contactform">
+                    <h2 class="dash-section__title">Contact Form Settings</h2>
+                    <div class="form-group">
+                        <label for="contactFormWebhook">n8n Webhook URL (Contact Form)</label>
+                        <input type="url" id="contactFormWebhook" placeholder="https://your-n8n-instance.com/webhook/contact-form">
+                        <small>When someone submits the contact form, data (name, email, subject, message) will be POSTed here. Set up an n8n workflow to send you an email.</small>
+                    </div>
+                    <button class="btn-primary" onclick="saveSection('contactform')">Save Contact Form Settings</button>
+                </div>
+
+                <!-- Chatbot Settings -->
+                <div class="dash-section" id="sec-chatbot">
+                    <h2 class="dash-section__title">Chatbot Settings</h2>
+                    <div class="form-group">
+                        <label for="webhookUrl">n8n Webhook URL</label>
+                        <input type="url" id="webhookUrl" placeholder="https://your-n8n-instance.com/webhook/...">
+                        <small>Paste your n8n webhook URL here. The chatbot will POST messages to this endpoint.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="chatbotGreeting">Greeting Message</label>
+                        <input type="text" id="chatbotGreeting" placeholder="Hi! I'm Abdullah's AI assistant. How can I help you today?">
+                    </div>
+                    <button class="btn-primary" onclick="saveSection('chatbot')">Save Chatbot Settings</button>
+                </div>
+
+                <!-- Toast notification -->
+                <div class="toast" id="toast">Saved successfully!</div>
+            </main>
+        </div>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

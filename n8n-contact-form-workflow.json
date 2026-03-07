@@ -1,0 +1,86 @@
+{
+  "name": "Portfolio Contact Form → Email",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "contact-form",
+        "responseMode": "responseNode",
+        "options": {
+          "allowedOrigins": "*"
+        }
+      },
+      "id": "webhook-node",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [250, 300],
+      "webhookId": "contact-form"
+    },
+    {
+      "parameters": {
+        "fromEmail": "noreply@your-domain.com",
+        "toEmail": "abdullah.zyphor@gmail.com",
+        "subject": "=Portfolio Contact: {{ $json.body.subject }}",
+        "emailType": "html",
+        "html": "=<div style=\"font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;\">\n  <h2 style=\"color: #c9a96e; border-bottom: 2px solid #c9a96e; padding-bottom: 10px;\">New Portfolio Contact Message</h2>\n  <table style=\"width: 100%; border-collapse: collapse; margin-top: 15px;\">\n    <tr>\n      <td style=\"padding: 10px; font-weight: bold; color: #555; width: 100px;\">Name:</td>\n      <td style=\"padding: 10px;\">{{ $json.body.name }}</td>\n    </tr>\n    <tr style=\"background: #f9f9f9;\">\n      <td style=\"padding: 10px; font-weight: bold; color: #555;\">Email:</td>\n      <td style=\"padding: 10px;\"><a href=\"mailto:{{ $json.body.email }}\">{{ $json.body.email }}</a></td>\n    </tr>\n    <tr>\n      <td style=\"padding: 10px; font-weight: bold; color: #555;\">Subject:</td>\n      <td style=\"padding: 10px;\">{{ $json.body.subject }}</td>\n    </tr>\n    <tr style=\"background: #f9f9f9;\">\n      <td style=\"padding: 10px; font-weight: bold; color: #555; vertical-align: top;\">Message:</td>\n      <td style=\"padding: 10px; line-height: 1.6;\">{{ $json.body.message }}</td>\n    </tr>\n  </table>\n  <p style=\"margin-top: 20px; color: #999; font-size: 12px;\">Sent from your portfolio contact form</p>\n</div>",
+        "options": {
+          "replyTo": "={{ $json.body.email }}"
+        }
+      },
+      "id": "send-email-node",
+      "name": "Send Email",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [500, 300],
+      "credentials": {
+        "smtp": {
+          "id": "YOUR_SMTP_CREDENTIAL_ID",
+          "name": "SMTP"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ success: true, message: 'Thank you! Your message has been sent.' }) }}"
+      },
+      "id": "respond-node",
+      "name": "Respond to Webhook",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [750, 300]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Send Email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send Email": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0
+}
