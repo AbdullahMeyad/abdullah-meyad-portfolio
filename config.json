@@ -1,14 +1,14 @@
-{
+﻿{
   "hero": {
     "label": "AI Systems & Automation",
     "name1": "Abdullah",
     "name2": "Al Meyad",
-    "tagline": "Intelligent Workflow Architect — building scalable AI-driven systems, LLM-based solutions, and seamless automation architectures."
+    "tagline": "Intelligent Workflow Architect â€” building scalable AI-driven systems, LLM-based solutions, and seamless automation architectures."
   },
   "about": {
     "title": "",
     "bio1": "AI Automation Engineer with hands-on programming experience in backend development, API integrations, and AI-driven workflow automation. Skilled in designing scalable systems, implementing LLM-based solutions, and connecting multiple platforms to create seamless, data-driven automation architectures.",
-    "bio2": "Currently at Octopi Digital LLC, I design and deploy AI-driven automation systems using GHL, n8n, Make, Zapier, Vapi, SimpleTalk, and Retell AI — building CRM workflows, API integrations, and AI voice agents to streamline operations and improve client conversion processes.",
+    "bio2": "Currently at Octopi Digital LLC, I design and deploy AI-driven automation systems using GHL, n8n, Make, Zapier, Vapi, SimpleTalk, and Retell AI â€” building CRM workflows, API integrations, and AI voice agents to streamline operations and improve client conversion processes.",
     "location": "Dhaka, Bangladesh"
   },
   "projects": [
@@ -22,7 +22,7 @@
         "OOP"
       ],
       "icon": "",
-      "image": "images/projects/easy-travel.png"
+      "image": "images/projects/easy-travel.webp"
     },
     {
       "title": "Blood Bank System",
@@ -33,7 +33,7 @@
         "Database Design"
       ],
       "icon": "",
-      "image": "images/projects/blood-bank.png"
+      "image": "images/projects/blood-bank.webp"
     },
     {
       "title": "Cafe Management",
@@ -45,7 +45,7 @@
         "OOP"
       ],
       "icon": "",
-      "image": "images/projects/cafe-management.png"
+      "image": "images/projects/cafe-management.webp"
     },
     {
       "title": "Radhuni Chatbot",
@@ -56,7 +56,7 @@
         "AI Agents"
       ],
       "icon": "",
-      "image": "images/projects/radhuni-chatbot.png"
+      "image": "images/projects/radhuni-chatbot.webp"
     },
     {
       "title": "Chakribakri",
@@ -68,7 +68,7 @@
         "JS"
       ],
       "icon": "",
-      "image": "images/projects/chakribakri.png"
+      "image": "images/projects/chakribakri.webp"
     },
     {
       "title": "Diabetes Prediction",
@@ -80,7 +80,7 @@
         "Scikit Learn"
       ],
       "icon": "",
-      "image": "images/projects/diabetes-pred.png"
+      "image": "images/projects/diabetes-pred.webp"
     },
     {
       "title": "E-Commerce Automation System",
@@ -95,7 +95,7 @@
         "Telegram"
       ],
       "icon": "",
-      "image": "images/projects/ecommerce-automation.png"
+      "image": "images/projects/ecommerce-automation.webp"
     },
     {
       "title": "Martial Arts Academy Follow-Up",
@@ -108,7 +108,7 @@
         "Email Automation"
       ],
       "icon": "",
-      "image": "images/projects/martial-arts-followup.png"
+      "image": "images/projects/martial-arts-followup.webp"
     },
     {
       "title": "Healthcare Chatbot",
@@ -121,7 +121,7 @@
         "Healthcare"
       ],
       "icon": "",
-      "image": "images/projects/healthcare-chatbot.png"
+      "image": "images/projects/healthcare-chatbot.webp"
     },
     {
       "title": "CRM with OpenClaw & Subagents",
@@ -134,7 +134,7 @@
         "Subagents"
       ],
       "icon": "",
-      "image": "images/projects/crm-openclaw.png"
+      "image": "images/projects/crm-openclaw.webp"
     },
     {
       "title": "GHL Client Automation",
@@ -146,7 +146,7 @@
         "Automation"
       ],
       "icon": "",
-      "image": "images/projects/ghl-client-work.png"
+      "image": "images/projects/ghl-client-work.webp"
     },
     {
       "title": "Client Workflow Automation",
@@ -158,7 +158,7 @@
         "API Integration"
       ],
       "icon": "",
-      "image": "images/projects/client-automation.png"
+      "image": "images/projects/client-automation.webp"
     },
     {
       "title": "Resume Extractor & ATS Checker",
@@ -171,7 +171,7 @@
         "Resume Builder"
       ],
       "icon": "",
-      "image": "images/projects/resume-extractor.png"
+      "image": "images/projects/resume-extractor.webp"
     },
     {
       "title": "HR Management System",
@@ -183,19 +183,19 @@
         "Automation"
       ],
       "icon": "",
-      "image": "images/projects/hr-management.png"
+      "image": "images/projects/hr-management.webp"
     },
     {
       "title": "Project Tracker",
       "category": "Full-Stack Development",
-      "desc": "Project management and task tracking application built with vibe coding — real-time collaboration and progress monitoring",
+      "desc": "Project management and task tracking application built with vibe coding â€” real-time collaboration and progress monitoring",
       "tags": [
         "Vibe Coding",
         "Full-Stack",
         "Project Management"
       ],
       "icon": "",
-      "image": "images/projects/project-tracker.png"
+      "image": "images/projects/project-tracker.webp"
     }
   ],
   "skills": [
@@ -260,13 +260,13 @@
       "title": "Managing Director",
       "institution": "Zyphor Tech",
       "detail": "March 2026 - Present",
-      "desc": "Managing Director at Zyphor Tech. Responsible for overall strategic direction, operations management, and business growth. Oversees project development, client relations, and team coordination across areas such as software development, automation systems, and AI-driven solutions. Ensures efficient execution of projects, maintains operational standards, and drives expansion of the company’s technology services and digital solutions portfolio.",
+      "desc": "Managing Director at Zyphor Tech. Responsible for overall strategic direction, operations management, and business growth. Oversees project development, client relations, and team coordination across areas such as software development, automation systems, and AI-driven solutions. Ensures efficient execution of projects, maintains operational standards, and drives expansion of the companyâ€™s technology services and digital solutions portfolio.",
       "badge": "Present"
     },
     {
       "title": "AI Automation Engineer",
       "institution": "Octopi Digital LLC",
-      "detail": "January 2026 — Present",
+      "detail": "January 2026 â€” Present",
       "desc": "Design and deploy AI-driven automation systems using GHL, n8n, Make, Zapier, Vapi, SimpleTalk, and Retell AI. Build CRM workflows, API integrations, and AI voice agents to streamline operations, automate lead management, and improve client conversion processes.",
       "badge": "Present"
     },
@@ -296,25 +296,25 @@
     {
       "title": "The Ultimate Java Programming Course",
       "desc": "Comprehensive Java programming course from Udemy",
-      "icon": "📜",
+      "icon": "ðŸ“œ",
       "link": "#"
     },
     {
       "title": "Python Development Fundamentals",
       "desc": "Comprehensive Python course by MTF Institute",
-      "icon": "📜",
+      "icon": "ðŸ“œ",
       "link": "#"
     },
     {
       "title": "Dean's List Honors",
       "desc": "Faculty of Science and Technology, AIUB",
-      "icon": "🏆",
+      "icon": "ðŸ†",
       "link": ""
     },
     {
       "title": "MAGNE.Q Fest Achievement",
       "desc": "Mirpur Cantonment Public School & College",
-      "icon": "🏅",
+      "icon": "ðŸ…",
       "link": ""
     }
   ],

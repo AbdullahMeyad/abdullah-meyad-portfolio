@@ -1,5 +1,5 @@
-/* ============================================
-   ADMIN.JS — Dashboard Logic
+﻿/* ============================================
+   ADMIN.JS â€” Dashboard Logic
    ============================================ */
 
 (function () {
@@ -77,30 +77,30 @@
             label: 'AI Systems & Automation',
             name1: 'Abdullah',
             name2: 'Al Meyad',
-            tagline: 'Intelligent Workflow Architect — building scalable AI-driven systems, LLM-based solutions, and seamless automation architectures.'
+            tagline: 'Intelligent Workflow Architect â€” building scalable AI-driven systems, LLM-based solutions, and seamless automation architectures.'
         },
         about: {
             title: '',
             bio1: 'AI Automation Engineer with hands-on programming experience in backend development, API integrations, and AI-driven workflow automation. Skilled in designing scalable systems, implementing LLM-based solutions, and connecting multiple platforms to create seamless, data-driven automation architectures.',
-            bio2: 'Currently at Octopi Digital LLC, I design and deploy AI-driven automation systems using GHL, n8n, Make, Zapier, Vapi, SimpleTalk, and Retell AI — building CRM workflows, API integrations, and AI voice agents to streamline operations and improve client conversion processes.',
+            bio2: 'Currently at Octopi Digital LLC, I design and deploy AI-driven automation systems using GHL, n8n, Make, Zapier, Vapi, SimpleTalk, and Retell AI â€” building CRM workflows, API integrations, and AI voice agents to streamline operations and improve client conversion processes.',
             location: 'Dhaka, Bangladesh'
         },
         projects: [
-            { title: 'Easy Travel', category: 'Desktop Application', desc: 'Java Swing academic project for travel management', tags: ['Java', 'Swing', 'OOP'], icon: '', image: 'images/projects/easy-travel.png' },
-            { title: 'Blood Bank System', category: 'Database / Backend', desc: 'MySQL-based academic project for blood bank operations', tags: ['MySQL', 'Database Design'], icon: '', image: 'images/projects/blood-bank.png' },
-            { title: 'Cafe Management', category: 'Desktop Application', desc: 'C# desktop project for cafe operations', tags: ['C#', '.NET', 'OOP'], icon: '', image: 'images/projects/cafe-management.png' },
-            { title: 'Radhuni Chatbot', category: 'AI / Automation', desc: 'AI automation chatbot for restaurant orders', tags: ['N8n', 'AI Agents'], icon: '', image: 'images/projects/radhuni-chatbot.png' },
-            { title: 'Chakribakri', category: 'Full-Stack Development', desc: 'Full-stack job portal for job seekers and employers', tags: ['Spring Boot', 'MySQL', 'JS'], icon: '', image: 'images/projects/chakribakri.png' },
-            { title: 'Diabetes Prediction', category: 'Data Science / ML', desc: 'Data Science academic project for diabetes prediction using ML', tags: ['Python', 'Pandas', 'Scikit Learn'], icon: '', image: 'images/projects/diabetes-pred.png' },
-            { title: 'E-Commerce Automation System', category: 'AI / Automation', desc: 'Multi-channel e-commerce automation with order processing, customer support, and notifications across platforms', tags: ['n8n', 'Zapier', 'WooCommerce', 'Messenger', 'WhatsApp', 'Telegram'], icon: '', image: 'images/projects/ecommerce-automation.png' },
-            { title: 'Martial Arts Academy Follow-Up', category: 'AI / Automation', desc: 'Automated email follow-up system for martial arts academy using GHL to n8n pipeline with Spark membership integration', tags: ['Go High Level', 'n8n', 'Spark Membership', 'Email Automation'], icon: '', image: 'images/projects/martial-arts-followup.png' },
-            { title: 'Healthcare Chatbot', category: 'AI / Automation', desc: 'AI-powered healthcare chatbot using GHL and n8n with real-time data fetching from Go High Level CRM', tags: ['Go High Level', 'n8n', 'AI Chatbot', 'Healthcare'], icon: '', image: 'images/projects/healthcare-chatbot.png' },
-            { title: 'CRM with OpenClaw & Subagents', category: 'AI / CRM', desc: 'Custom CRM system built with OpenClaw and AI subagents for intelligent lead management and automated workflows', tags: ['OpenClaw', 'AI Agents', 'CRM', 'Subagents'], icon: '', image: 'images/projects/crm-openclaw.png' },
-            { title: 'GHL Client Automation', category: 'Client Work', desc: 'Go High Level automation and workflow setup for client business operations, lead funnels, and CRM management', tags: ['Go High Level', 'CRM', 'Automation'], icon: '', image: 'images/projects/ghl-client-work.png' },
-            { title: 'Client Workflow Automation', category: 'Client Work', desc: 'End-to-end workflow automation and integration system built for client business process optimization', tags: ['n8n', 'Automation', 'API Integration'], icon: '', image: 'images/projects/client-automation.png' },
-            { title: 'Resume Extractor & ATS Checker', category: 'AI / Automation', desc: 'AI-powered resume extractor, ATS compatibility checker, and resume builder automated with n8n workflows', tags: ['n8n', 'AI', 'ATS', 'Resume Builder'], icon: '', image: 'images/projects/resume-extractor.png' },
-            { title: 'HR Management System', category: 'AI / Automation', desc: 'Automated HR management system built with n8n for employee onboarding, leave management, and attendance tracking', tags: ['n8n', 'HR', 'Automation'], icon: '', image: 'images/projects/hr-management.png' },
-            { title: 'Project Tracker', category: 'Full-Stack Development', desc: 'Project management and task tracking application built with vibe coding — real-time collaboration and progress monitoring', tags: ['Vibe Coding', 'Full-Stack', 'Project Management'], icon: '', image: 'images/projects/project-tracker.png' }
+            { title: 'Easy Travel', category: 'Desktop Application', desc: 'Java Swing academic project for travel management', tags: ['Java', 'Swing', 'OOP'], icon: '', image: 'images/projects/easy-travel.webp' },
+            { title: 'Blood Bank System', category: 'Database / Backend', desc: 'MySQL-based academic project for blood bank operations', tags: ['MySQL', 'Database Design'], icon: '', image: 'images/projects/blood-bank.webp' },
+            { title: 'Cafe Management', category: 'Desktop Application', desc: 'C# desktop project for cafe operations', tags: ['C#', '.NET', 'OOP'], icon: '', image: 'images/projects/cafe-management.webp' },
+            { title: 'Radhuni Chatbot', category: 'AI / Automation', desc: 'AI automation chatbot for restaurant orders', tags: ['N8n', 'AI Agents'], icon: '', image: 'images/projects/radhuni-chatbot.webp' },
+            { title: 'Chakribakri', category: 'Full-Stack Development', desc: 'Full-stack job portal for job seekers and employers', tags: ['Spring Boot', 'MySQL', 'JS'], icon: '', image: 'images/projects/chakribakri.webp' },
+            { title: 'Diabetes Prediction', category: 'Data Science / ML', desc: 'Data Science academic project for diabetes prediction using ML', tags: ['Python', 'Pandas', 'Scikit Learn'], icon: '', image: 'images/projects/diabetes-pred.webp' },
+            { title: 'E-Commerce Automation System', category: 'AI / Automation', desc: 'Multi-channel e-commerce automation with order processing, customer support, and notifications across platforms', tags: ['n8n', 'Zapier', 'WooCommerce', 'Messenger', 'WhatsApp', 'Telegram'], icon: '', image: 'images/projects/ecommerce-automation.webp' },
+            { title: 'Martial Arts Academy Follow-Up', category: 'AI / Automation', desc: 'Automated email follow-up system for martial arts academy using GHL to n8n pipeline with Spark membership integration', tags: ['Go High Level', 'n8n', 'Spark Membership', 'Email Automation'], icon: '', image: 'images/projects/martial-arts-followup.webp' },
+            { title: 'Healthcare Chatbot', category: 'AI / Automation', desc: 'AI-powered healthcare chatbot using GHL and n8n with real-time data fetching from Go High Level CRM', tags: ['Go High Level', 'n8n', 'AI Chatbot', 'Healthcare'], icon: '', image: 'images/projects/healthcare-chatbot.webp' },
+            { title: 'CRM with OpenClaw & Subagents', category: 'AI / CRM', desc: 'Custom CRM system built with OpenClaw and AI subagents for intelligent lead management and automated workflows', tags: ['OpenClaw', 'AI Agents', 'CRM', 'Subagents'], icon: '', image: 'images/projects/crm-openclaw.webp' },
+            { title: 'GHL Client Automation', category: 'Client Work', desc: 'Go High Level automation and workflow setup for client business operations, lead funnels, and CRM management', tags: ['Go High Level', 'CRM', 'Automation'], icon: '', image: 'images/projects/ghl-client-work.webp' },
+            { title: 'Client Workflow Automation', category: 'Client Work', desc: 'End-to-end workflow automation and integration system built for client business process optimization', tags: ['n8n', 'Automation', 'API Integration'], icon: '', image: 'images/projects/client-automation.webp' },
+            { title: 'Resume Extractor & ATS Checker', category: 'AI / Automation', desc: 'AI-powered resume extractor, ATS compatibility checker, and resume builder automated with n8n workflows', tags: ['n8n', 'AI', 'ATS', 'Resume Builder'], icon: '', image: 'images/projects/resume-extractor.webp' },
+            { title: 'HR Management System', category: 'AI / Automation', desc: 'Automated HR management system built with n8n for employee onboarding, leave management, and attendance tracking', tags: ['n8n', 'HR', 'Automation'], icon: '', image: 'images/projects/hr-management.webp' },
+            { title: 'Project Tracker', category: 'Full-Stack Development', desc: 'Project management and task tracking application built with vibe coding â€” real-time collaboration and progress monitoring', tags: ['Vibe Coding', 'Full-Stack', 'Project Management'], icon: '', image: 'images/projects/project-tracker.webp' }
         ],
         skills: [
             { title: 'Programming Languages', tags: ['Java', 'Python', 'C / C++', 'C#', 'JavaScript', 'PHP', 'R', 'HTML/CSS', 'Dart'] },
@@ -110,16 +110,16 @@
             { title: 'Databases', tags: ['MySQL', 'PostgreSQL', 'MongoDB', 'SQL Server'] }
         ],
         education: [
-            { title: 'AI Automation Engineer', institution: 'Octopi Digital LLC', detail: 'January 2026 — Present', desc: 'Design and deploy AI-driven automation systems using GHL, n8n, Make, Zapier, Vapi, SimpleTalk, and Retell AI. Build CRM workflows, API integrations, and AI voice agents to streamline operations, automate lead management, and improve client conversion processes.', badge: 'Present' },
+            { title: 'AI Automation Engineer', institution: 'Octopi Digital LLC', detail: 'January 2026 â€” Present', desc: 'Design and deploy AI-driven automation systems using GHL, n8n, Make, Zapier, Vapi, SimpleTalk, and Retell AI. Build CRM workflows, API integrations, and AI voice agents to streamline operations, automate lead management, and improve client conversion processes.', badge: 'Present' },
             { title: 'Bachelor of Science in Computer Science and Engineering', institution: 'American International University-Bangladesh (AIUB)', detail: '11th Semester  |  CGPA: 3.78', desc: '', badge: 'Ongoing' },
             { title: 'Higher Secondary Certificate (HSC)', institution: 'Mirpur Cantonment Public School and College', detail: 'GPA: 5.00 / 5.00', desc: '', badge: '' },
             { title: 'Secondary School Certificate (SSC)', institution: 'Mirpur Cantonment Public School and College', detail: 'GPA: 4.89 / 5.00', desc: '', badge: '' }
         ],
         certifications: [
-            { title: 'The Ultimate Java Programming Course', desc: 'Comprehensive Java programming course from Udemy', icon: '📜', link: '#' },
-            { title: 'Python Development Fundamentals', desc: 'Comprehensive Python course by MTF Institute', icon: '📜', link: '#' },
-            { title: "Dean's List Honors", desc: 'Faculty of Science and Technology, AIUB', icon: '🏆', link: '' },
-            { title: 'MAGNE.Q Fest Achievement', desc: 'Mirpur Cantonment Public School & College', icon: '🏅', link: '' }
+            { title: 'The Ultimate Java Programming Course', desc: 'Comprehensive Java programming course from Udemy', icon: 'ðŸ“œ', link: '#' },
+            { title: 'Python Development Fundamentals', desc: 'Comprehensive Python course by MTF Institute', icon: 'ðŸ“œ', link: '#' },
+            { title: "Dean's List Honors", desc: 'Faculty of Science and Technology, AIUB', icon: 'ðŸ†', link: '' },
+            { title: 'MAGNE.Q Fest Achievement', desc: 'Mirpur Cantonment Public School & College', icon: 'ðŸ…', link: '' }
         ],
         contact: {
             email: 'abdullahmeyad7@gmail.com',
@@ -361,8 +361,8 @@
                 '<input type="text" class="proj-tags" value="' + esc(data ? (data.tags || []).join(', ') : '') + '" placeholder="Java, Spring Boot, MySQL">' +
             '</div>' +
             '<div class="form-group">' +
-                '<label>Image Path (e.g. images/projects/my-project.png)</label>' +
-                '<input type="text" class="proj-image" value="' + esc(data ? data.image : '') + '" placeholder="images/projects/project-name.png">' +
+                '<label>Image Path (e.g. images/projects/my-project.webp)</label>' +
+                '<input type="text" class="proj-image" value="' + esc(data ? data.image : '') + '" placeholder="images/projects/project-name.webp">' +
             '</div>';
         container.appendChild(card);
     };
@@ -471,7 +471,7 @@
                 '<textarea class="edu-desc" rows="2">' + esc(data ? data.desc : '') + '</textarea>' +
             '</div>' +
             '<div class="form-group">' +
-                '<label>Badge (e.g. Ongoing, Present — leave empty for none)</label>' +
+                '<label>Badge (e.g. Ongoing, Present â€” leave empty for none)</label>' +
                 '<input type="text" class="edu-badge" value="' + esc(data ? data.badge : '') + '">' +
             '</div>';
         container.appendChild(card);
@@ -598,7 +598,7 @@
             '</div>' +
             '<div class="form-group">' +
                 '<label>Icon (emoji)</label>' +
-                '<input type="text" class="cert-icon" value="' + esc(data ? data.icon : '') + '" placeholder="📜">' +
+                '<input type="text" class="cert-icon" value="' + esc(data ? data.icon : '') + '" placeholder="ðŸ“œ">' +
             '</div>' +
             '<div class="form-group">' +
                 '<label>Certificate Link (optional)</label>' +

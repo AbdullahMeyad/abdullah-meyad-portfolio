@@ -1482,6 +1482,58 @@ button {
 .reveal:nth-child(2) { transition-delay: 0.1s; }
 .reveal:nth-child(3) { transition-delay: 0.2s; }
 .reveal:nth-child(4) { transition-delay: 0.3s; }
+.reveal:nth-child(5) { transition-delay: 0.4s; }
+.reveal:nth-child(6) { transition-delay: 0.5s; }
+
+/* Stagger project cards within grid */
+.projects__grid .project-card.reveal:nth-child(1) { transition-delay: 0s; }
+.projects__grid .project-card.reveal:nth-child(2) { transition-delay: 0.08s; }
+.projects__grid .project-card.reveal:nth-child(3) { transition-delay: 0.16s; }
+.projects__grid .project-card.reveal:nth-child(4) { transition-delay: 0.24s; }
+.projects__grid .project-card.reveal:nth-child(5) { transition-delay: 0.32s; }
+.projects__grid .project-card.reveal:nth-child(6) { transition-delay: 0.4s; }
+.projects__grid .project-card.reveal:nth-child(7) { transition-delay: 0.48s; }
+.projects__grid .project-card.reveal:nth-child(8) { transition-delay: 0.56s; }
+.projects__grid .project-card.reveal:nth-child(9) { transition-delay: 0.64s; }
+.projects__grid .project-card.reveal:nth-child(n+10) { transition-delay: 0.7s; }
+
+/* Stagger skill groups */
+.skills__grid .skill-group.reveal:nth-child(1) { transition-delay: 0s; }
+.skills__grid .skill-group.reveal:nth-child(2) { transition-delay: 0.1s; }
+.skills__grid .skill-group.reveal:nth-child(3) { transition-delay: 0.2s; }
+.skills__grid .skill-group.reveal:nth-child(4) { transition-delay: 0.3s; }
+.skills__grid .skill-group.reveal:nth-child(5) { transition-delay: 0.4s; }
+
+/* Stagger skill tags within each group */
+.skill-group.visible .skill-tag { animation: tagPop 0.4s ease both; }
+.skill-group.visible .skill-tag:nth-child(1) { animation-delay: 0.05s; }
+.skill-group.visible .skill-tag:nth-child(2) { animation-delay: 0.1s; }
+.skill-group.visible .skill-tag:nth-child(3) { animation-delay: 0.15s; }
+.skill-group.visible .skill-tag:nth-child(4) { animation-delay: 0.2s; }
+.skill-group.visible .skill-tag:nth-child(5) { animation-delay: 0.25s; }
+.skill-group.visible .skill-tag:nth-child(6) { animation-delay: 0.3s; }
+.skill-group.visible .skill-tag:nth-child(7) { animation-delay: 0.35s; }
+.skill-group.visible .skill-tag:nth-child(8) { animation-delay: 0.4s; }
+.skill-group.visible .skill-tag:nth-child(9) { animation-delay: 0.45s; }
+.skill-group.visible .skill-tag:nth-child(n+10) { animation-delay: 0.5s; }
+
+@keyframes tagPop {
+    from { opacity: 0; transform: scale(0.8) translateY(10px); }
+    to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* Stagger timeline items */
+.education__timeline .timeline-item.reveal:nth-child(1) { transition-delay: 0s; }
+.education__timeline .timeline-item.reveal:nth-child(2) { transition-delay: 0.15s; }
+.education__timeline .timeline-item.reveal:nth-child(3) { transition-delay: 0.3s; }
+.education__timeline .timeline-item.reveal:nth-child(4) { transition-delay: 0.45s; }
+.education__timeline .timeline-item.reveal:nth-child(5) { transition-delay: 0.6s; }
+
+/* Stagger certification cards */
+.certs__grid .cert-card.reveal:nth-child(1) { transition-delay: 0s; }
+.certs__grid .cert-card.reveal:nth-child(2) { transition-delay: 0.12s; }
+.certs__grid .cert-card.reveal:nth-child(3) { transition-delay: 0.24s; }
+.certs__grid .cert-card.reveal:nth-child(4) { transition-delay: 0.36s; }
 
 /* ============================================
    NOISE TEXTURE OVERLAY
@@ -1496,6 +1548,125 @@ body::before {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
     background-repeat: repeat;
     background-size: 256px 256px;
+}
+
+/* ============================================
+   THEME TOGGLE
+   ============================================ */
+.theme-toggle {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-fast);
+    margin-left: 0.5rem;
+    flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+/* ============================================
+   SCROLL TO TOP
+   ============================================ */
+.scroll-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 90;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    background: var(--bg-elevated);
+    color: var(--text-muted);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease, color 0.2s, border-color 0.2s;
+}
+
+.scroll-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-top:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+/* ============================================
+   LIGHT THEME
+   ============================================ */
+[data-theme="light"] {
+    --bg: #f5f3ef;
+    --bg-elevated: #ffffff;
+    --bg-card: #ffffff;
+    --text: #1a1a1a;
+    --text-muted: #555555;
+    --text-dim: #999999;
+    --accent: #9a7b4f;
+    --accent-glow: rgba(154, 123, 79, 0.12);
+    --border: #e0dcd5;
+}
+
+[data-theme="light"] .nav--scrolled {
+    background: rgba(245, 243, 239, 0.9);
+}
+
+[data-theme="light"] body::before {
+    opacity: 0.015;
+}
+
+[data-theme="light"] .loader {
+    background: var(--bg);
+}
+
+[data-theme="light"] .hero__portrait-frame::after {
+    background: radial-gradient(circle, rgba(154,123,79,0.18) 0%, transparent 70%);
+}
+
+[data-theme="light"] .project-card {
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+[data-theme="light"] .skill-tag {
+    background: var(--bg);
+    border-color: var(--border);
+}
+
+[data-theme="light"] .scroll-top,
+[data-theme="light"] .chatbot__toggle,
+[data-theme="light"] .music-player__btn {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+/* Responsive scroll-to-top */
+@media (max-width: 768px) {
+    .scroll-top {
+        bottom: 1.5rem;
+        right: 1.5rem;
+        width: 40px;
+        height: 40px;
+    }
+    .theme-toggle {
+        width: 34px;
+        height: 34px;
+    }
 }
 
 /* ============================================
