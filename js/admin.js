@@ -1,5 +1,5 @@
 ﻿/* ============================================
-   ADMIN.JS â€” Dashboard Logic
+   ADMIN.JS — Dashboard Logic
    ============================================ */
 
 (function () {
@@ -77,12 +77,12 @@
             label: 'AI Systems & Automation',
             name1: 'Abdullah',
             name2: 'Al Meyad',
-            tagline: 'Intelligent Workflow Architect â€” building scalable AI-driven systems, LLM-based solutions, and seamless automation architectures.'
+            tagline: 'Intelligent Workflow Architect — building scalable AI-driven systems, LLM-based solutions, and seamless automation architectures.'
         },
         about: {
             title: '',
             bio1: 'AI Automation Engineer with hands-on programming experience in backend development, API integrations, and AI-driven workflow automation. Skilled in designing scalable systems, implementing LLM-based solutions, and connecting multiple platforms to create seamless, data-driven automation architectures.',
-            bio2: 'Currently at Octopi Digital LLC, I design and deploy AI-driven automation systems using GHL, n8n, Make, Zapier, Vapi, SimpleTalk, and Retell AI â€” building CRM workflows, API integrations, and AI voice agents to streamline operations and improve client conversion processes.',
+            bio2: 'Currently at Octopi Digital LLC, I design and deploy AI-driven automation systems using GHL, n8n, Make, Zapier, Vapi, SimpleTalk, and Retell AI — building CRM workflows, API integrations, and AI voice agents to streamline operations and improve client conversion processes.',
             location: 'Dhaka, Bangladesh'
         },
         projects: [
@@ -100,7 +100,7 @@
             { title: 'Client Workflow Automation', category: 'Client Work', desc: 'End-to-end workflow automation and integration system built for client business process optimization', tags: ['n8n', 'Automation', 'API Integration'], icon: '', image: 'images/projects/client-automation.webp' },
             { title: 'Resume Extractor & ATS Checker', category: 'AI / Automation', desc: 'AI-powered resume extractor, ATS compatibility checker, and resume builder automated with n8n workflows', tags: ['n8n', 'AI', 'ATS', 'Resume Builder'], icon: '', image: 'images/projects/resume-extractor.webp' },
             { title: 'HR Management System', category: 'AI / Automation', desc: 'Automated HR management system built with n8n for employee onboarding, leave management, and attendance tracking', tags: ['n8n', 'HR', 'Automation'], icon: '', image: 'images/projects/hr-management.webp' },
-            { title: 'Project Tracker', category: 'Full-Stack Development', desc: 'Project management and task tracking application built with vibe coding â€” real-time collaboration and progress monitoring', tags: ['Vibe Coding', 'Full-Stack', 'Project Management'], icon: '', image: 'images/projects/project-tracker.webp' }
+            { title: 'Project Tracker', category: 'Full-Stack Development', desc: 'Project management and task tracking application built with vibe coding — real-time collaboration and progress monitoring', tags: ['Vibe Coding', 'Full-Stack', 'Project Management'], icon: '', image: 'images/projects/project-tracker.webp' }
         ],
         skills: [
             { title: 'Programming Languages', tags: ['Java', 'Python', 'C / C++', 'C#', 'JavaScript', 'PHP', 'R', 'HTML/CSS', 'Dart'] },
@@ -110,7 +110,7 @@
             { title: 'Databases', tags: ['MySQL', 'PostgreSQL', 'MongoDB', 'SQL Server'] }
         ],
         education: [
-            { title: 'AI Automation Engineer', institution: 'Octopi Digital LLC', detail: 'January 2026 â€” Present', desc: 'Design and deploy AI-driven automation systems using GHL, n8n, Make, Zapier, Vapi, SimpleTalk, and Retell AI. Build CRM workflows, API integrations, and AI voice agents to streamline operations, automate lead management, and improve client conversion processes.', badge: 'Present' },
+            { title: 'AI Automation Engineer', institution: 'Octopi Digital LLC', detail: 'January 2026 — Present', desc: 'Design and deploy AI-driven automation systems using GHL, n8n, Make, Zapier, Vapi, SimpleTalk, and Retell AI. Build CRM workflows, API integrations, and AI voice agents to streamline operations, automate lead management, and improve client conversion processes.', badge: 'Present' },
             { title: 'Bachelor of Science in Computer Science and Engineering', institution: 'American International University-Bangladesh (AIUB)', detail: '11th Semester  |  CGPA: 3.78', desc: '', badge: 'Ongoing' },
             { title: 'Higher Secondary Certificate (HSC)', institution: 'Mirpur Cantonment Public School and College', detail: 'GPA: 5.00 / 5.00', desc: '', badge: '' },
             { title: 'Secondary School Certificate (SSC)', institution: 'Mirpur Cantonment Public School and College', detail: 'GPA: 4.89 / 5.00', desc: '', badge: '' }
@@ -471,7 +471,7 @@
                 '<textarea class="edu-desc" rows="2">' + esc(data ? data.desc : '') + '</textarea>' +
             '</div>' +
             '<div class="form-group">' +
-                '<label>Badge (e.g. Ongoing, Present â€” leave empty for none)</label>' +
+                '<label>Badge (e.g. Ongoing, Present — leave empty for none)</label>' +
                 '<input type="text" class="edu-badge" value="' + esc(data ? data.badge : '') + '">' +
             '</div>';
         container.appendChild(card);

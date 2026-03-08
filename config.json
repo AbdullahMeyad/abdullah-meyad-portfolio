@@ -3,12 +3,12 @@
     "label": "AI Systems & Automation",
     "name1": "Abdullah",
     "name2": "Al Meyad",
-    "tagline": "Intelligent Workflow Architect â€” building scalable AI-driven systems, LLM-based solutions, and seamless automation architectures."
+    "tagline": "Intelligent Workflow Architect — building scalable AI-driven systems, LLM-based solutions, and seamless automation architectures."
   },
   "about": {
     "title": "",
     "bio1": "AI Automation Engineer with hands-on programming experience in backend development, API integrations, and AI-driven workflow automation. Skilled in designing scalable systems, implementing LLM-based solutions, and connecting multiple platforms to create seamless, data-driven automation architectures.",
-    "bio2": "Currently at Octopi Digital LLC, I design and deploy AI-driven automation systems using GHL, n8n, Make, Zapier, Vapi, SimpleTalk, and Retell AI â€” building CRM workflows, API integrations, and AI voice agents to streamline operations and improve client conversion processes.",
+    "bio2": "Currently at Octopi Digital LLC, I design and deploy AI-driven automation systems using GHL, n8n, Make, Zapier, Vapi, SimpleTalk, and Retell AI — building CRM workflows, API integrations, and AI voice agents to streamline operations and improve client conversion processes.",
     "location": "Dhaka, Bangladesh"
   },
   "projects": [
@@ -188,7 +188,7 @@
     {
       "title": "Project Tracker",
       "category": "Full-Stack Development",
-      "desc": "Project management and task tracking application built with vibe coding â€” real-time collaboration and progress monitoring",
+      "desc": "Project management and task tracking application built with vibe coding — real-time collaboration and progress monitoring",
       "tags": [
         "Vibe Coding",
         "Full-Stack",
@@ -260,13 +260,13 @@
       "title": "Managing Director",
       "institution": "Zyphor Tech",
       "detail": "March 2026 - Present",
-      "desc": "Managing Director at Zyphor Tech. Responsible for overall strategic direction, operations management, and business growth. Oversees project development, client relations, and team coordination across areas such as software development, automation systems, and AI-driven solutions. Ensures efficient execution of projects, maintains operational standards, and drives expansion of the companyâ€™s technology services and digital solutions portfolio.",
+      "desc": "Managing Director at Zyphor Tech. Responsible for overall strategic direction, operations management, and business growth. Oversees project development, client relations, and team coordination across areas such as software development, automation systems, and AI-driven solutions. Ensures efficient execution of projects, maintains operational standards, and drives expansion of the company’s technology services and digital solutions portfolio.",
       "badge": "Present"
     },
     {
       "title": "AI Automation Engineer",
       "institution": "Octopi Digital LLC",
-      "detail": "January 2026 â€” Present",
+      "detail": "January 2026 — Present",
       "desc": "Design and deploy AI-driven automation systems using GHL, n8n, Make, Zapier, Vapi, SimpleTalk, and Retell AI. Build CRM workflows, API integrations, and AI voice agents to streamline operations, automate lead management, and improve client conversion processes.",
       "badge": "Present"
     },
