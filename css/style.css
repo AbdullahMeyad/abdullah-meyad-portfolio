@@ -126,6 +126,31 @@ body.loading {
     100% { transform: translateX(100%); }
 }
 
+.loader__enter {
+    display: inline-block;
+    margin-top: 2.5rem;
+    padding: 0.85rem 2.5rem;
+    background: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    animation: loaderPulse 2s ease-in-out infinite;
+}
+
+.loader__enter:hover {
+    background: var(--accent);
+    color: var(--bg);
+    transform: scale(1.05);
+    animation: none;
+}
+
 a {
     text-decoration: none;
     color: inherit;
