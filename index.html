@@ -684,11 +684,45 @@
         var player = document.getElementById('musicPlayer');
         var iconPlay = btn.querySelector('.music-icon--play');
         var iconPause = btn.querySelector('.music-icon--pause');
-        var playing = false;
+        var playing = true;
 
         audio.volume = 0.4;
 
-        btn.addEventListener('click', function(){
+        // Auto-play on first user interaction (browsers block autoplay without interaction)
+        function startMusic() {
+            audio.play().then(function(){
+                iconPlay.style.display = 'none';
+                iconPause.style.display = '';
+                player.classList.add('music-player--playing');
+                playing = true;
+            }).catch(function(){
+                // Browser blocked autoplay — start on first click/scroll/key
+                playing = false;
+            });
+            document.removeEventListener('click', startMusic);
+            document.removeEventListener('scroll', startMusic);
+            document.removeEventListener('keydown', startMusic);
+        }
+
+        // Try immediately after loader
+        window.addEventListener('load', function(){
+            setTimeout(function(){
+                audio.play().then(function(){
+                    iconPlay.style.display = 'none';
+                    iconPause.style.display = '';
+                    player.classList.add('music-player--playing');
+                    playing = true;
+                }).catch(function(){
+                    // Blocked — wait for user interaction
+                    document.addEventListener('click', startMusic, { once: true });
+                    document.addEventListener('scroll', startMusic, { once: true });
+                    document.addEventListener('keydown', startMusic, { once: true });
+                });
+            }, 2000);
+        });
+
+        btn.addEventListener('click', function(e){
+            e.stopPropagation();
             if (playing) {
                 audio.pause();
                 iconPlay.style.display = '';
