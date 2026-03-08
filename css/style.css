@@ -296,6 +296,13 @@ button {
     transform: translateY(-1px);
 }
 
+/* Nav right group (theme + hamburger) */
+.nav__right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 /* Hamburger */
 .nav__hamburger {
     display: none;
@@ -335,6 +342,23 @@ button {
     opacity: 0;
     visibility: hidden;
     transition: var(--transition);
+}
+
+.mobile-menu__close {
+    position: absolute;
+    top: 1.5rem;
+    right: clamp(1.5rem, 5vw, 4rem);
+    z-index: 106;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 8px;
+    transition: color 0.2s;
+}
+
+.mobile-menu__close:hover {
+    color: var(--accent);
 }
 
 .mobile-menu.active {
@@ -1690,6 +1714,10 @@ body::before {
 
     .nav__hamburger {
         display: flex;
+    }
+
+    .theme-toggle {
+        margin-left: 0;
     }
 
     .hero__grid {

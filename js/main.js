@@ -42,6 +42,13 @@
     // ---- Mobile Menu ----
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobileMenu');
+    const mobileMenuClose = document.getElementById('mobileMenuClose');
+
+    function closeMobileMenu() {
+        hamburger.classList.remove('active');
+        mobileMenu.classList.remove('active');
+        document.body.style.overflow = '';
+    }
 
     if (hamburger && mobileMenu) {
         hamburger.addEventListener('click', function () {
@@ -50,14 +57,14 @@
             document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
         });
 
+        if (mobileMenuClose) {
+            mobileMenuClose.addEventListener('click', closeMobileMenu);
+        }
+
         // Close on link click
         var mobileLinks = mobileMenu.querySelectorAll('.mobile-menu__link');
         mobileLinks.forEach(function (link) {
-            link.addEventListener('click', function () {
-                hamburger.classList.remove('active');
-                mobileMenu.classList.remove('active');
-                document.body.style.overflow = '';
-            });
+            link.addEventListener('click', closeMobileMenu);
         });
     }
 
