@@ -296,25 +296,25 @@
     {
       "title": "The Ultimate Java Programming Course",
       "desc": "Comprehensive Java programming course from Udemy",
-      "icon": "ðŸ“œ",
+      "icon": "📜",
       "link": "#"
     },
     {
       "title": "Python Development Fundamentals",
       "desc": "Comprehensive Python course by MTF Institute",
-      "icon": "ðŸ“œ",
+      "icon": "📜",
       "link": "#"
     },
     {
       "title": "Dean's List Honors",
       "desc": "Faculty of Science and Technology, AIUB",
-      "icon": "ðŸ†",
+      "icon": "🏆",
       "link": ""
     },
     {
       "title": "MAGNE.Q Fest Achievement",
       "desc": "Mirpur Cantonment Public School & College",
-      "icon": "ðŸ…",
+      "icon": "🏅",
       "link": ""
     }
   ],

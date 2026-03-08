@@ -116,10 +116,10 @@
             { title: 'Secondary School Certificate (SSC)', institution: 'Mirpur Cantonment Public School and College', detail: 'GPA: 4.89 / 5.00', desc: '', badge: '' }
         ],
         certifications: [
-            { title: 'The Ultimate Java Programming Course', desc: 'Comprehensive Java programming course from Udemy', icon: 'ðŸ“œ', link: '#' },
-            { title: 'Python Development Fundamentals', desc: 'Comprehensive Python course by MTF Institute', icon: 'ðŸ“œ', link: '#' },
-            { title: "Dean's List Honors", desc: 'Faculty of Science and Technology, AIUB', icon: 'ðŸ†', link: '' },
-            { title: 'MAGNE.Q Fest Achievement', desc: 'Mirpur Cantonment Public School & College', icon: 'ðŸ…', link: '' }
+            { title: 'The Ultimate Java Programming Course', desc: 'Comprehensive Java programming course from Udemy', icon: '📜', link: '#' },
+            { title: 'Python Development Fundamentals', desc: 'Comprehensive Python course by MTF Institute', icon: '📜', link: '#' },
+            { title: "Dean's List Honors", desc: 'Faculty of Science and Technology, AIUB', icon: '🏆', link: '' },
+            { title: 'MAGNE.Q Fest Achievement', desc: 'Mirpur Cantonment Public School & College', icon: '🏅', link: '' }
         ],
         contact: {
             email: 'abdullahmeyad7@gmail.com',
@@ -598,7 +598,7 @@
             '</div>' +
             '<div class="form-group">' +
                 '<label>Icon (emoji)</label>' +
-                '<input type="text" class="cert-icon" value="' + esc(data ? data.icon : '') + '" placeholder="ðŸ“œ">' +
+                '<input type="text" class="cert-icon" value="' + esc(data ? data.icon : '') + '" placeholder="📜">' +
             '</div>' +
             '<div class="form-group">' +
                 '<label>Certificate Link (optional)</label>' +
