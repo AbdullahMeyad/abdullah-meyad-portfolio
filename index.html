@@ -7,7 +7,7 @@
     <meta name="description" content="Portfolio of Abdullah Al Meyad — AI Systems & Automation Engineer specializing in intelligent workflow architecture, LLM-based solutions, and AI-driven automation.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="stylesheet" href="css/style.css">
@@ -740,31 +740,23 @@
         var sunIcon = toggle.querySelector('.theme-icon--sun');
         var moonIcon = toggle.querySelector('.theme-icon--moon');
         var saved = localStorage.getItem('theme');
-        if (saved === 'dark') {
-            document.documentElement.setAttribute('data-theme', 'dark');
-            updateIcons('dark');
-        } else {
-            // Default is light (no data-theme attribute needed)
-            document.documentElement.removeAttribute('data-theme');
-            updateIcons('light');
+        if (saved) {
+            document.documentElement.setAttribute('data-theme', saved);
+            updateIcons(saved);
         }
         function updateIcons(t) {
-            if (t === 'dark') {
-                sunIcon.style.display = '';
-                moonIcon.style.display = 'none';
-            } else {
+            if (t === 'light') {
                 sunIcon.style.display = 'none';
                 moonIcon.style.display = '';
+            } else {
+                sunIcon.style.display = '';
+                moonIcon.style.display = 'none';
             }
         }
         toggle.addEventListener('click', function(){
             var current = document.documentElement.getAttribute('data-theme');
-            var next = current === 'dark' ? 'light' : 'dark';
-            if (next === 'light') {
-                document.documentElement.removeAttribute('data-theme');
-            } else {
-                document.documentElement.setAttribute('data-theme', next);
-            }
+            var next = current === 'light' ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', next);
             localStorage.setItem('theme', next);
             updateIcons(next);
         });
