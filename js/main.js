@@ -154,7 +154,7 @@
 
                 var activeLink = document.querySelector('.nav__link[href="#' + id + '"]');
                 if (activeLink && !activeLink.classList.contains('nav__link--cta')) {
-                    activeLink.style.color = 'var(--text)';
+                    activeLink.style.color = 'var(--fg)';
                 }
             }
         });
@@ -272,4 +272,6 @@
             });
         });
     }
+
+
 })();
